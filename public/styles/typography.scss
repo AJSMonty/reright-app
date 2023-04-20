@@ -1,0 +1,17 @@
+@import url("https://fonts.cdnfonts.com/css/circular-book");
+
+$default-font: "Circular Book", sans-serif;
+
+body {
+  font-family: $default-font;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}

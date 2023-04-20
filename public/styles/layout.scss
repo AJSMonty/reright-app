@@ -1,0 +1,13 @@
+body {
+  background-color: $background-color;
+  padding: 2rem;
+}
+
+.track-item {
+  background-color: $card-background-color;
+  //   width: 100%;
+  border-radius: 1.5rem;
+  //   min-height: 100px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
