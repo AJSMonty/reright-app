@@ -4,10 +4,17 @@ body {
 }
 
 .track-item {
+  animation: fadeIn 0.3s forwards calc(var(--animation-delay-number) * 30ms)
+      ease-in-out,
+    translateY 0.3s forwards calc(var(--animation-delay-number) * 30ms)
+      ease-in-out;
   background-color: $card-background-color;
-  //   width: 100%;
   border-radius: 1.5rem;
-  //   min-height: 100px;
   margin-bottom: 16px;
   padding: 16px;
+  display: flex;
+  img {
+    height: 70px;
+    width: 70px;
+  }
 }

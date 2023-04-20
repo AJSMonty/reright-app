@@ -1,22 +1,14 @@
 import React from "react";
 import { apiResponse } from "../models/APIModel";
+import Track from "./Track";
 
 function TrackList() {
   console.log(apiResponse);
   return (
     <div>
-      <h1>Tracklist</h1>
+      <h1 className="mb32">Tracklist</h1>
       {apiResponse.compositions.map((track: any, index: number) => {
-        return (
-          <div className="track-item" key={track.id}>
-            <h3>{track.title}</h3>
-            <p>{track.creationYear}</p>
-            <p>
-              {track.contributors.length}{" "}
-              {track.contributors.length > 1 ? "Contributors" : "Contributor"}
-            </p>
-          </div>
-        );
+        return <Track key={track.id} track={track} index={index}></Track>;
       })}
     </div>
   );
