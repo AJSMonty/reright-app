@@ -12,7 +12,7 @@ function Track(props: any) {
         } as React.CSSProperties
       }
     >
-      <img src="/images/moonlight-sonata.jpeg" alt={track.title}></img>
+      <img src={track.albumartwork} alt={track.title}></img>
       <div className="pl16">
         <h3>{track.title}</h3>
         <p>{track.creationYear}</p>
