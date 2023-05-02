@@ -1,6 +1,10 @@
 body {
   background-color: $background-color;
   padding: 2rem;
+  background-image: url("../images/background-vector.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .track-item {
@@ -12,9 +16,11 @@ body {
   border-radius: 1.5rem;
   margin-bottom: 16px;
   padding: 16px;
+  opacity: 0;
   display: flex;
   img {
     height: 70px;
     width: 70px;
+    border-radius: 0.5rem;
   }
 }
